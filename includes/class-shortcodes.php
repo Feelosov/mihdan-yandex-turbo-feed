@@ -21,12 +21,12 @@ class Shortcodes {
 
 		return sprintf(
 			'<button formaction="%s" data-background-color="%s" data-color="%s" data-turbo="%s" data-primary="%s">%s</button>',
-			$atts['formaction'],
-			$atts['data-background-color'],
-			$atts['data-color'],
-			$atts['data-turbo'],
-			$atts['data-primary'],
-			$atts['value']
+			esc_attr( $atts['formaction'] ),
+			esc_attr( $atts['data-background-color'] ),
+			esc_attr( $atts['data-color'] ),
+			esc_attr( $atts['data-turbo'] ),
+			esc_attr( $atts['data-primary'] ),
+			esc_html( $atts['value'] )
 		);
 	}
 }

@@ -5,8 +5,8 @@ Donate link: https://www.kobzarev.com/donate/
 Tags: wordpress, feed, yandex, turbo, rss, yandex-turbo, yandex-turbo-pages, rss-feed, seo, seo-friendly, yoast, google, webmaster, schema, sitemap
 Requires at least: 5.6
 Requires PHP: 7.4
-Tested up to: 6.4
-Stable tag: 1.6.5.1
+Tested up to: 6.5
+Stable tag: 1.6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -173,6 +173,9 @@ add_filter( 'mihdan_yandex_turbo_feed_taxonomy', function( $taxonomy ) {
 `
 
 == Changelog ==
+
+= 1.6.6 (2024-05-03) =
+* Исправлена критическая уязвимость `CVE-2024-4411`
 
 = 1.6.5 (2023-12-05) =
 * Добавлена возможность вставки видео из плагина Lite Video Embed
