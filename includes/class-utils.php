@@ -135,7 +135,7 @@ class Utils {
 
 		$not_in = self::prepare_in( $black_list );
 
-		$sql = "SELECT meta_key
+		$sql = "SELECT DISTINCT meta_key
 				FROM {$wpdb->postmeta}
 				WHERE SUBSTRING(meta_key, 1, 7) NOT IN ({$not_in})
 				ORDER BY meta_key
